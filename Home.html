@@ -62,22 +62,6 @@
       </div>
     </div>
   </div>
-
-  <canvas id="myCanvas" width="300" height="200"
-style="border:1px solid #d3d3d3;">
-Your browser does not support the canvas element.
-</canvas>
-
-<script>
-message = prompt("Your Message");
-var canvas = document.getElementById("myCanvas");
-var ctx=canvas.getContext("2d");
-ctx.font="30px Comic Sans MS";
-ctx.fillStyle = "red";
-ctx.textAlign = "center";
-ctx.fillText(message, canvas.width/2, canvas.height/2);
-</script>
-
   <!-- body section -->
   <div class="row" id="container">
     <div class="column left" style="width:40%">
@@ -95,6 +79,7 @@ ctx.fillText(message, canvas.width/2, canvas.height/2);
             in the any business organization today. If you major in OMIS you will 
             learn how to put technology to work. 
           </p>
+          <br><br>
           <h4>About</h4>
           <p>The OM&IS Gazette is a weekly newsletter sent from the academic department each week. 
             The Gazette is filled with pertinent information including upcoming events, important deadlines,
@@ -106,6 +91,11 @@ ctx.fillText(message, canvas.width/2, canvas.height/2);
       </div>
     </div>
     <div class="column right" style="width:60%">
+        <video width="320" height="240" controls>
+            <source src="movie.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+          </video>
 
       <div id="container-right" style="margin-top:50px">
 
