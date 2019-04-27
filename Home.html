@@ -63,6 +63,21 @@
     </div>
   </div>
 
+  <canvas id="myCanvas" width="300" height="200"
+style="border:1px solid #d3d3d3;">
+Your browser does not support the canvas element.
+</canvas>
+
+<script>
+message = prompt("Your Message");
+var canvas = document.getElementById("myCanvas");
+var ctx=canvas.getContext("2d");
+ctx.font="30px Comic Sans MS";
+ctx.fillStyle = "red";
+ctx.textAlign = "center";
+ctx.fillText(message, canvas.width/2, canvas.height/2);
+</script>
+
   <!-- body section -->
   <div class="row" id="container">
     <div class="column left" style="width:40%">
@@ -79,26 +94,6 @@
             knowledge, communication skills, and leadership that is required 
             in the any business organization today. If you major in OMIS you will 
             learn how to put technology to work. 
-          </p>
-          <h4>OMIS Careers</h4>
-          <p>
-            Whatever career you choose in business, everyone who works 
-            in business uses technology and information systems. A grocery store might  
-            keep a database to track which products are selling and which have been on the 
-            shelf for a period of time. Your payroll is organized through a database.
-            Careers from OM&IS, but are not limited too, include:
-            <ul>
-              <li>Supply Chain Management</li>
-              <li>Resource Management</li>
-             <li>Data Administration</li>
-             <li>Systems Analysis</li>
-             <li>Application Development</li>
-             <li>Prouction Operations</li>
-             <li>Analytical Positions in the Fields of Operations</li>
-             <li>Web and E-Commerce Initiatives</li>
-             <li>Data Analyst</li>
-             <li>Cyber Security</li>
-            </ul>
           </p>
           <h4>About</h4>
           <p>The OM&IS Gazette is a weekly newsletter sent from the academic department each week. 
@@ -120,7 +115,28 @@
           <img class="mySlides" src="./images/slider3.jpg" style="width:100%">
           <img class="mySlides" src="./images/slider2.jpg" style="width:100%">
         </div>
-
+        <div class="right-textbox" style="margin-right:30px">
+        <h4>OMIS Careers</h4>
+        <p>
+          Whatever career you choose in business, everyone who works 
+          in business uses technology and information systems. A grocery store might  
+          keep a database to track which products are selling and which have been on the 
+          shelf for a period of time. Your payroll is organized through a database.
+          Careers from OM&IS, but are not limited too, include:
+          <ul>
+            <li>Supply Chain Management</li>
+            <li>Resource Management</li>
+           <li>Data Administration</li>
+           <li>Systems Analysis</li>
+           <li>Application Development</li>
+           <li>Prouction Operations</li>
+           <li>Analytical Positions in the Fields of Operations</li>
+           <li>Web and E-Commerce Initiatives</li>
+           <li>Data Analyst</li>
+           <li>Cyber Security</li>
+          </ul>
+        </p>
+        </div>
 
 
 
