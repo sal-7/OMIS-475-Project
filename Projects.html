@@ -11,6 +11,10 @@
   <link href="https://use.fontawesome.com/dcfc86ee58.css" media="all" rel="stylesheet" />
   <title>OMIS Gazette</title>
 </head>
+<script>
+    var d = new Date();
+    document.getElementById("demo").innerHTML = d;
+    </script>
 
 <body>
   <!-- header section -->
@@ -56,20 +60,9 @@
   </div>
  <!--Java asking for the name of the user and greeting them-->
  <h1 style="padding-left:3%;">Welcome
- <canvas id="myCanvas" width="1100" height="75"
- style="border:1px; float:right;">
- Your browser does not support the canvas element.
-</h1></canvas>
- 
- <script>
- message = prompt("Please Enter Your Name!");
- var canvas = document.getElementById("myCanvas");
- var ctx=canvas.getContext("2d");
- ctx.font="40px Verdana";
- ctx.fillStyle = "red";
- ctx.textAlign = "center";
- ctx.fillText(message, canvas.width/2, canvas.height/2);
- </script>
+</h1>
+
+
   <!-- body section -->
   <div class="row" id="container">
     <!--This is where we will put the java--> 
