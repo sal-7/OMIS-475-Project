@@ -9,6 +9,41 @@
   <link href="./style/home-page-styles.css" rel="stylesheet">
   <link href="./style/niu_theme_new.css" rel="stylesheet" type="text/css">
   <link href="https://use.fontawesome.com/dcfc86ee58.css" media="all" rel="stylesheet" />
+  <script>
+  	
+  	function validateEmail(emailField){
+  	
+        var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+
+        if (reg.test(emailField.value) == false) 
+        {
+            alert('Invalid Email Address');
+            return false;
+           
+        }
+
+        return true;
+
+	}
+
+	function validateForm(){
+
+		var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+		var emailField = document.getElementById("email");
+
+
+        if (reg.test(emailField.value) == false) 
+        {
+            alert('Invalid Email Address');
+           	return false;
+        }
+
+        return true;
+
+	}
+
+
+  </script>
   <title>Contact Us</title>
  
 </head>
@@ -30,7 +65,6 @@
         <div class="navbar-header"><a class="navbar-brand-root" href="#"> <img alt="NIU Logo"
               src="./style/niu-logo-homepage.png"> </a></div>
         <div id="slidemenu">
-          <form action="#" class="navbar-form navbar-right">
           </form>
           <h2 style="color:white;padding-left:34%">OMIS Gazatte Webpage</h2>
 
@@ -86,14 +120,14 @@
     <div class="column right" style="width:30%">
 
       <div id="container-right" class="right-textbox">
-          <form method="POST" action="https://formspree.io/harbifa@gmail.com">
+          <form method="POST" action="https://formspree.io/harbifa@gmail.com" onsubmit="return validateForm()">
          
             <input type="text" name="firstname" placeholder="First Name">
             <br><br/>
           
             <input type="text" name="lastname"  placeholder="Last Name">
             <br><br/>
-            <input type="email" name="email" placeholder="Your Email"> 
+            <input type="email" name="email" placeholder="Your Email" onblur="validateEmail(this);" id="email"> 
             <br><br/><br/>
 
             <textarea name="message" placeholder="Text Message" maxlength="1600" style="width:250px;height:170px"></textarea>
