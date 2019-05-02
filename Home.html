@@ -35,7 +35,17 @@
         <div class="navbar-header"><a class="navbar-brand-root" href="#"> <img alt="NIU Logo"
               src="./style/niu-logo-homepage.png"> </a></div>
           </form>
-          <h2 style="color:white;padding-left:34%">OMIS Gazatte Webpage</h2>
+          
+          <dvi style="float:left;text-align:right;width:600px"><h2 style="color:white;">OMIS Gazatte Webpage</h2></dvi>
+          <div  style="text-align:right"><button onclick="myFunction()"style="margin-left:150px"> Print this page</button>
+
+            <!--This function will print the most recent Gazettte.-->
+            <!-- Is there a way to have it manually change without going back in to change it?-->
+              <script>
+              function myFunction() {
+               window.print();
+              }
+              </script></div>
           <ul class="nav navbar-nav navbar-right" id="mainnav">
             <li><a href="./Home.html">Home</a></li>
             <li><a href="./WeeklyBlurb.html">Weekly Blurb</a></li>
@@ -137,15 +147,7 @@
     <div class="col-lg-4 col-md-4 col-sm-4 col-lg-push-4 col-md-push-4 col-sm-push-4 niu-home">
       <p><a href="./Home.html" target="new"><img alt="NIU Logo" src="./style/niu_logo.png"></a></p>
       <p><a href="#top">Top the page </a></p>
-      <button onclick="myFunction()"style="margin-left:150px"> Print this page</button>
-
-    <!--This function will print the most recent Gazettte.-->
-    <!-- Is there a way to have it manually change without going back in to change it?-->
-      <script>
-      function myFunction() {
-       window.print();
-      }
-      </script>
+      
     </div>
     <div class="col-lg-4 col-md-4 col-sm-4 col-lg-pull-4 col-md-pull-4 col-sm-pull-4 footer-about"
       style="margin-left:10px">
